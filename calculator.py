@@ -1,5 +1,17 @@
 import math
 
+def square_root(a):
+    try:
+        math.sqrt(a)
+    except ValueError:
+        print("Invalid Number")
+
+def hypotenuse(a, b):
+    try:
+        math.hypot(a, b)
+    except:
+        print("Invalid")
+
 def add(a, b):
     return a + b
 
