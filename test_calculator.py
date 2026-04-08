@@ -15,21 +15,21 @@ class TestCalculator(unittest.TestCase):
 
 
     ######## Partner 1
-    def test_multiply(self):
-        self.assertEqual(multiply(2, 3), 6)
-        self.assertEqual(multiply(-1, 5), -5)
-        self.assertEqual(multiply(0, 100), 0)
+    def test_mul(self):
+        self.assertEqual(mul(2, 3), 6)
+        self.assertEqual(mul(-1, 5), -5)
+        self.assertEqual(mul(0, 100), 0)
 
-    def test_divide(self):
-        self.assertEqual(divide(2, 10), 5)
-        self.assertEqual(divide(5, 25), 5)
-        self.assertEqual(divide(1, 1), 1)
+    def test_div(self):
+        self.assertEqual(div(2, 10), 5)
+        self.assertEqual(div(5, 25), 5)
+        self.assertEqual(div(1, 1), 1)
     # ##########################
 
     ######## Partner 2
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
-            divide(0, 5)
+            div(0, 5)
 
     def test_logarithm(self):
         self.assertAlmostEqual(logarithm(10, 100), 2)
